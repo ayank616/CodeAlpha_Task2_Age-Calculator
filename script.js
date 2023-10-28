@@ -1,10 +1,10 @@
 function calculateAge() {
-    const dobDay = parseInt(document.getElementById('dobDay').value);
-    const dobMonth = parseInt(document.getElementById('dobMonth').value);
-    const dobYear = parseInt(document.getElementById('dobYear').value);
+    const Day = parseInt(document.getElementById('Day').value);
+    const Month = parseInt(document.getElementById('Month').value);
+    const Year = parseInt(document.getElementById('Year').value);
 
     const today = new Date();
-    const birthDate = new Date(dobYear, dobMonth - 1, dobDay); // Month is 0-based.
+    const birthDate = new Date(Year, Month - 1, Day); // Month is 0-based.
 
     if (isNaN(birthDate)) {
         document.getElementById('result').textContent = "Please enter a valid date of birth.";
